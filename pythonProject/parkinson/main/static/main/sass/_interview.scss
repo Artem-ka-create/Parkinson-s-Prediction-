@@ -1,0 +1,30 @@
+.interview{
+    margin-bottom: 100px;
+    position: relative;
+    &__container{
+        margin-top: 200px;
+    }
+    &__item{
+        &__wrap{
+            
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            label{
+
+                width: 560px;
+                text-align: right;
+                padding-right: 30px;
+            }
+            input{
+                padding: 0 15px;
+                border:none;
+                background-color: #E8F3FE;
+                border-radius: 12px;
+                width: 560px;
+            }
+        }
+        
+
+    }
+}

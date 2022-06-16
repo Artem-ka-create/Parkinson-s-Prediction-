@@ -1,0 +1,97 @@
+.plates{
+    margin-top: 40px;
+    width: 100%;
+    
+    &__text{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        margin-bottom: 20px;
+        h2{
+            font-size: 28px;
+        }
+    }
+    &__container{
+       
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4,calc(208px*1.12));
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    &__item{
+        
+        width: calc(208px*1.12);
+        height: calc(64px*1.12);
+        -webkit-box-shadow: 0 0 29px 1px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0 0 29px 1px rgba(0,0,0,0.1);
+        box-shadow: 0 0 29px 1px rgba(0,0,0,0.1);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        &:nth-child(2){
+            .plates__item__icon{
+                background:#FFE6D0;
+            }
+        }
+        &:nth-child(3){
+            .plates__item__icon{
+                background:#FCCFDB;
+            }
+        }
+        &:nth-child(4){
+            .plates__item__icon{
+                background:#E7DFFF;
+            }
+        }
+        &:nth-child(5){
+            .plates__item__icon{
+                background:
+                #FFECC3;
+            }
+        }
+        &:nth-child(6){
+            .plates__item__icon{
+                background:#D0DFFF;
+            }
+        }
+        &:nth-child(7){
+            .plates__item__icon{
+                background:#DFFFD2;
+            }
+        }
+        &:nth-child(8){
+            .plates__item__icon{
+                background:
+                #FFEAC8;
+            }
+        }
+        
+        &__icon{
+            margin-left: 10px;
+            width: 48px;
+            height: 48px;
+            background:#C8F3E8;
+            border-radius: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            i{
+                
+                font-size: 36px ;
+                color: rgb(58, 58, 58);
+            }
+        }
+        &__text{
+            margin-left: 15px;
+            font-size: 15px;
+            width: 140px;
+            text-align: center;
+        }
+    }
+   
+
+}

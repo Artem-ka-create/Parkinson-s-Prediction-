@@ -1,0 +1,38 @@
+User-agent: * 
+Disallow: /template/
+Disallow: /service/
+Disallow: /mailer/
+Disallow: /404.php
+Allow: /blog/
+Allow: /ru/
+Allow: /img/*.png
+Allow: /img/*.jpg
+Allow: /img/*.jpeg
+Allow: /img/*.gif
+
+User-agent: GoogleBot
+Disallow: /template/
+Disallow: /service/
+Disallow: /mailer/
+Disallow: /404.php
+Allow: /blog/
+Allow: /ru/
+Allow: /img/*.png
+Allow: /img/*.jpg
+Allow: /img/*.jpeg
+Allow: /img/*.gif
+
+User-agent: Yandex
+Disallow: /template/
+Disallow: /service/
+Disallow: /mailer/
+Disallow: /404.php
+Allow: /blog/
+Allow: /ru/
+Allow: /img/*.png
+Allow: /img/*.jpg
+Allow: /img/*.jpeg
+Allow: /img/*.gif
+
+Host: https://www.notarius-chulovsky.kiev.ua
+Sitemap: https://www.notarius-chulovsky.kiev.ua/sitemap.xml

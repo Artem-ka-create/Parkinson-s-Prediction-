@@ -1,0 +1,89 @@
+.uplmodel{
+
+height: 400px;
+width: 100%;
+// background-color: aquamarine;
+display: flex;
+justify-content: center;
+align-items: center;
+
+&__upload_part{
+
+// display: flex;align-items: center;
+// flex-direction: column;
+height: 500px;
+width: 650px;
+// background-color: antiquewhite;
+margin-left: auto;
+margin-right: auto;
+label {
+
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    // height: 30px;
+    border-radius: 70px !important;
+
+
+    background-color: #5CA4EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    
+    color: black;
+
+  }
+  #file-chosen{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+
+  &__upload_button{
+
+    display: block;
+    
+    margin: 0 auto;
+    margin-top: 100px;
+
+    height: 50px;
+    width: 200px;
+    background-color: #5CA4EF;
+    font-size: 20px;
+
+   
+    position: relative;    
+    border-radius: 10px;
+    border: 1px solid #5CA4EF;
+    outline: none;
+
+    
+
+
+  }
+
+
+}
+
+&__upload_info{
+
+
+    height: 500px;
+    width: 650px;
+    // background-color: blueviolet;
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
+
+
+
+
+}

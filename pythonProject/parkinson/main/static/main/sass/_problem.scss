@@ -1,0 +1,43 @@
+.problem{
+
+    width: 100%;
+    height: 40px;
+    margin-bottom: 150px;
+    &__background{
+        margin-top: calc(30px*1.12);
+        width: 20%;
+        height: 400px;
+        background: #FCCFDB;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        margin-left: 25%;
+        
+        height: 45px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+
+        &__text{
+
+
+            margin-top: 22px;
+            margin-bottom: 26px;
+            color: gb(58, 58, 58);
+
+
+
+
+        }
+
+
+
+    }
+
+
+
+
+
+}

@@ -1,0 +1,51 @@
+.chooseModelpart{
+
+
+width: 100%;
+height: 100%;
+
+margin-bottom: 200px;
+
+// background-color: antiquewhite;
+
+
+
+    &__button{
+        display: block;
+    
+        margin: 0 auto;
+        margin-top: 15px;
+    
+        height: 50px;
+        width: 400px;
+        background-color: #5CA4EF;
+        font-size: 20px;
+    
+       
+        position: relative;    
+        border-radius: 10px;
+        border: 1px solid #5CA4EF;
+        outline: none;
+    
+    }
+
+    &__uploadButton{
+        display: block;
+    
+        margin: 0 auto;
+        margin-top: 50px;
+    
+        height: 50px;
+        width: 400px;
+        background-color:aquamarine;
+        font-size: 20px;
+    
+       
+        position: relative;    
+        border-radius: 10px;
+        border: 1px solid aqua;
+        outline: none;
+    }
+
+
+}

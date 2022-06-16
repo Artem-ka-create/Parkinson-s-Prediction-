@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uk_UA">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Parkinson's disease</title>
+    <link rel="shortcut icon"  type="image/png" href="../../static/main/favicon/favicon.png">
+    <link rel="apple-touch-icon"  type="image/png" href="../../static/main/favicon/favicon.png">
+    <meta name="description" content="parkinson test">
+    <meta name="Keywords" content="parkinson test, parkinson's disease,parkinson disease test">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c867da12b3.js" crossorigin="anonymous"></script>
+    <link rel="preload" as="style" href="{% static 'main/css/bootstrap-reboot.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap-reboot.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'main/css/style.min.css' %}">
+    
+    
+</head>
+<body  >
+
+    
+    <header class="header">
+        <div class="header__box">  
+            <img class="icon" src="../../static/main/icons/tuke.jpg" alt="tuke">
+        </div>
+        <nav>
+            <a href="{% url 'home' %}">Parkinson's disease</a>
+            <a href="{% url 'testMethod' %}">Test</a>
+            <a href="{% url 'about' %}">About - project</a>
+            <a href="{% url 'support' %}">Support</a>
+            <a href="{% url 'uploadModel'%}">Upload Model</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="home">
+            <div class="container home__container">
+
+                <div class="home__box">
+
+                    <div class="home__box__img">
+                        <img src="../../static/main/img/Doctor.jpg" alt="Doctor">
+                    </div>
+
+                    <div class="home__box__info">
+                        <div class="home__box__info__text">
+
+                            <div class="home__box__info__text__title">
+                                Parkinson's disease
+                            </div>
+                            <div class="home__box__info__text__text"> 
+                                Parkinson's disease is a progressive nervous system disorder that affects movement. 
+                                Symptoms start gradually, sometimes starting with a barely noticeable tremor in just one hand. 
+                                Tremors are common, but the disorder also commonly causes stiffness or slowing of movement.
+                            </div>
+                            
+                           
+
+
+                        </div>
+                        <a href="{% url 'testMethod' %}" class="button home__box__info__button">Start testing</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="plates">
+            <div class="container">
+                <div class="plates__text">
+                    <h2>Symptoms of the disease</h2>
+                </div>
+            </div>
+            <div class="container plates__container">
+
+                
+
+                <div class="plates__item">
+
+
+                    <div class="plates__item__icon">
+                        
+                        <i class="far fa-tired"></i>
+                       
+
+                    </div>
+
+                    <div class="plates__item__text">
+                       Prostration
+                    </div>
+
+
+                </div>
+
+                <div class="plates__item">
+
+
+                    <div class="plates__item__icon">
+                        
+                        <i class="fas fa-brain"></i>
+                       
+
+                    </div>
+
+                    <div class="plates__item__text">
+                        Dementia
+                    </div>
+
+
+                </div>
+
+                <div class="plates__item">
+
+
+                    <div class="plates__item__icon">
+                        
+                        <i class="far fa-sad-tear"></i>
+                       
+
+                    </div>
+
+                    <div class="plates__item__text">
+                        Depression
+                    </div>
+
+
+                </div>
+
+                <div class="plates__item">
+
+
+                    <div class="plates__item__icon">
+                        
+                        <i class="far fa-grin-tongue-wink"></i>
+                       
+
+                    </div>
+
+                    <div class="plates__item__text">
+                        Nervous
+                    </div>
+
+
+                </div>
+
+                <div class="plates__item">
+
+
+                    <div class="plates__item__icon">
+                        
+                        <i class="fas fa-cloud-moon"></i>
+                       
+
+                    </div>
+
+                    <div class="plates__item__text">
+                       Insomnia
+                    </div>
+
+
+                </div>
+
+                <div class="plates__item">
+
+
+                    <div class="plates__item__icon">
+                        
+                        <i class="fas fa-heartbeat"></i>
+                       
+
+                    </div>
+
+                    <div class="plates__item__text">
+                         Cardio disease
+                    </div>
+
+
+                </div>
+
+                <div class="plates__item">
+
+
+                    <div class="plates__item__icon">
+                        
+                        <i class="far fa-compass"></i>
+                       
+
+                    </div>
+
+                    <div class="plates__item__text">
+                        Orientation disorders
+                    </div>
+
+
+                </div>
+
+                <div class="plates__item">
+
+
+                    <div class="plates__item__icon">
+                        
+                        <i class="fas fa-exclamation"></i>
+                       
+
+                    </div>
+
+                    <div class="plates__item__text">
+                        Attention disorders
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="information">
+            <div class="container information__container">
+
+                <div class="information__layer">
+                    <div class="information__layer__img">
+                        <img src="../../static/main/img/parkinsons_brain.jpeg" alt="parkinsons_brain">
+                    </div>
+
+
+                    <div class="information__layer__text">
+
+
+                        <div class="information__layer__text__title">
+                            Causes
+                        </div>
+
+
+                        <div class="information__layer__text__information">
+                            In Parkinson's disease, certain nerve cells (neurons) in the brain gradually break down or die. 
+                            Many of the symptoms are due to a loss of neurons that produce a chemical messenger 
+                            in your brain called dopamine. When dopamine levels decrease, 
+                            it causes abnormal brain activity, leading to impaired movement and o
+                            ther symptoms of Parkinson's disease.<br><br>
+
+                            The cause of Parkinson's disease is unknown, but several factors appear to play a role, including:<br><br>
+                            
+                            <b>• Genes</b>. Researchers have identified specific genetic mutations that can cause Parkinson's disease. But these are uncommon except in rare cases with many family members affected by Parkinson's disease.<br><br>
+
+
+                            <b> Environmental triggers</b>. Exposure to certain toxins or environmental factors may increase the risk of later Parkinson's disease, but the risk is relatively small.<br><br>
+
+
+                            
+                            <b>• The presence of Lewy bodies</b>. Clumps of specific substances within brain cells are microscopic markers of Parkinson's disease. <br><br>
+
+                            <b>• Alpha-synuclein found within Lewy bodies</b>. Although many substances are found within Lewy bodies, scientists believe an important one is the natural and widespread protein called alpha-synuclein (a-synuclein). 
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="information__layer__two">
+
+
+                    <div class="information__layer__two__info">
+
+                        <div class="information__layer__two__info__title">
+                            Risk factors
+                        </div>
+                        <div class="information__layer__two__info__text">
+                            Risk factors for Parkinson's disease include:<br><br>
+
+                           <b>•Age</b>. Young adults rarely experience Parkinson's disease. It ordinarily begins in middle or late life, and the risk increases with age. People usually develop the disease around age 60 or older.<br><br>
+                           <b>•Heredity</b>. Having a close relative with Parkinson's disease increases the chances that you'll develop the disease. However, your risks are still small unless you have many relatives in your family with Parkinson's disease.<br><br>
+                            <b>•Sex</b>. Men are more likely to develop Parkinson's disease than are women.<br><br>
+
+                            <b>•Exposure to toxins</b>. Ongoing exposure to herbicides and pesticides may slightly increase your risk of Parkinson's disease.
+                        </div>
+                    </div>
+
+                    <div class="information__layer__two__img">
+
+                        <img src="../../static/main/img/help.jpeg" alt="help">
+
+                    </div>
+
+                </div>
+
+                <div class="information__layer__three">
+
+
+
+                    <div class="information__layer__three__info">
+
+
+
+                        <div class="information__layer__three__info__title">
+                            Complications
+                        </div>
+                        <div class="information__layer__three__info__text">
+                            Parkinson's disease is often accompanied by these additional problems, which may be treatable:<br><br>
+                            
+                            <b>•Thinking difficulties</b>. You may experience cognitive problems (dementia) and thinking difficulties. These usually occur in the later stages of Parkinson's disease. Such cognitive problems aren't very responsive to medications.<br>
+                                <b>•Depression and emotional changes</b>.. You may experience depression, sometimes in the very early stages. Receiving treatment for depression can make it easier to handle the other challenges of Parkinson's disease.
+                            <br><br>
+                            You may also experience other emotional changes, such as fear, anxiety or loss of motivation. Doctors may give you medications to treat these symptoms.<br><br>
+                            
+                            <b>•Swallowing problems</b>. You may develop difficulties with swallowing as your condition progresses. Saliva may accumulate in your mouth due to slowed swallowing, leading to drooling.<br>
+                            <b>•Chewing and eating problems</b>. Late-stage Parkinson's disease affects the muscles in your mouth, making chewing difficult. This can lead to choking and poor nutrition.<br>
+                                <b>•Sleep problems and sleep disorders</b>. People with Parkinson's disease often have sleep problems, including waking up frequently throughout the night, waking up early or falling asleep during the day.<br><br>
+                            
+                            People may also experience rapid eye movement sleep behavior disorder, which involves acting out your dreams. Medications may help your sleep problems.<br>
+                            Bladder problems. Parkinson's disease may cause bladder problems, including being unable to control urine or having difficulty urinating.<br><br>
+                            <b>•Constipation</b>. Many people with Parkinson's disease develop constipation, mainly due to a slower digestive tract.<br>
+                            You may also experience:<br>
+                            <b>•Blood pressure changes</b>. You may feel dizzy or lightheaded when you stand due to a sudden drop in blood pressure (orthostatic hypotension).<br>
+
+                            <b>•Smell dysfunction</b>. You may experience problems with your sense of smell. You may have difficulty identifying certain odors or the difference between odors.<br>
+
+                            <b>•Fatigue</b>. Many people with Parkinson's disease lose energy and experience fatigue, especially later in the day. The cause isn't always known.<br>
+
+                            <b>•Pain</b>. Some people with Parkinson's disease experience pain, either in specific areas of their bodies or throughout their bodies.<br>
+
+                            <b>•Sexual dysfunction</b>. Some people with Parkinson's disease notice a decrease in sexual desire or performance.
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="container banner__container">
+
+
+                <div class="banner__box">
+
+                
+
+                    <div class="banner__box__text">
+                            2022
+                    </div>
+                    <div class="banner__box__copy">
+                        @copyright Artem Petrenko
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    
+
+    <footer class="footer ">
+        
+    </footer>
+    
+<script src="../../static/main/js/jquery-3.5.1.min.js"></script>
+<script src="../../static/main/js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

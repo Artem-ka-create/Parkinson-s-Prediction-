@@ -1,0 +1,53 @@
+.methods{
+
+    height: 400px;
+    width: 100%;
+    // background-color: aquamarine;
+
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+
+
+
+    
+    &__methodsButton{
+        
+    margin-left: auto;
+    margin-right: auto;
+
+        justify-content: center;
+        align-items: center;
+    
+    
+        height: 400px;
+        width: 400px;
+        background-color: #b1d3f8;
+        font-size: 20px;
+    
+       
+        position: relative;    
+        border-radius: 10px;
+        border: 1px solid #5CA4EF;
+        outline: none;
+
+
+        &__icon{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            // margin-top: -50px;
+            height: 300px;
+            width: 300px;
+            // background-color: wheat;
+
+        }
+
+
+    }
+
+    
+}

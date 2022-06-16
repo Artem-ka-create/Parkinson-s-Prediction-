@@ -1,0 +1,36 @@
+@import 'var/var';
+@import 'BEM/button';
+@import 'BEM/banner';
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+body{
+    position: relative;
+}
+
+
+
+@import 'header';
+@import 'home';
+@import 'plate';
+@import 'information';
+@import 'maintext';
+@import 'interview';
+@import 'hellotext';
+@import 'tukelearn';
+@import 'task';
+@import 'links';
+@import 'linkplates';
+@import 'problem';
+@import 'mail';
+@import 'uplmodel';
+@import 'methods';
+@import 'chooseModelpart';

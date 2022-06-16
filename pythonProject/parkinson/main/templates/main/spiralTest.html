@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uk_UA">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Parkinson's disease</title>
+    <link rel="shortcut icon"  type="image/png" href="../../static/main/favicon/favicon.png">
+    <link rel="apple-touch-icon"  type="image/png" href="../../static/main/favicon/favicon.png">
+    <meta name="description" content="parkinson test">
+    <meta name="Keywords" content="parkinson test, parkinson's disease,parkinson disease test">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c867da12b3.js" crossorigin="anonymous"></script>
+    <link rel="preload" as="style" href="{% static 'main/css/bootstrap-reboot.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap-reboot.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'main/css/style.min.css' %}">
+
+
+</head>
+<!--<script>-->
+<!--            function call_counter(url, pk) {-->
+<!--                console.log(pk)-->
+<!--                window.open(url+"?type="+pk,"_self");-->
+<!--            }-->
+<!--        </script>-->
+<body  >
+
+
+    <header class="header">
+        <div class="header__box">
+            <img class="icon" src="../../static/main/icons/tuke.jpg" alt="tuke">
+        </div>
+       <nav>
+            <a href="{% url 'home' %}">Parkinson's disease</a>
+            <a href="{% url 'testMethod' %}">Test</a>
+            <a href="{% url 'about' %}">About - project</a>
+            <a href="{% url 'support' %}">Support</a>
+            <a href="{% url 'uploadModel'%}">Upload Model</a>
+        </nav>
+
+    </header>
+
+    <div class="maintext">Test by spiral drawing</div>
+
+
+<div class="container">
+
+    <form action="{% url 'spiralTest' %}" method="post"  enctype="multipart/form-data">
+        <div  class="uplmodel">
+
+            <div style="display: flex;justify-content: center;align-content: center;flex-direction: column">
+                    {% csrf_token %}
+
+                      {{form.as_p}}
+
+                <button class="uplmodel__upload_part__upload_button" value="{{modelChoose}}"
+                        type="submit">Predict</button>
+            </div>
+
+            <div class="uplmodel__upload_info">
+                <div style="margin-top: 10px; font-size: 13px;margin-bottom: 20px;" class="maintext">
+                    <h1>Upload instruction</h1>
+                </div>
+                <div style="font-size:20px">
+                1. Put name and surname of patient<br>
+                2. Upload picture to the form in (jpg,png) formats<br>
+                3. To upload picture,click on prediction button<br>
+                4. Wait for a result
+                </div>
+        </div>
+    </div>
+
+        <span style="display: block;margin: 0 auto;text-align: center;padding-top: 40px;font-size: 30px">
+            {{ prediction }} </span>
+        <span style="display: block;margin: 0 auto;text-align: right;padding-right: 36px;padding-top: 20px;font-size: 16px;color: #6c757d">
+            {{ accuracy_score }} </span>
+    </form>
+
+    {% if obj %}
+
+    <h3>Succesfully uploaded : {{img_obj.caption}}</h3>
+    <img src="{{ obj.image.url}}" alt="image" class="img-thumbnail" height="30%" width="30%" >
+
+    {% endif %}
+
+
+
+</div>
+
+<div class="banner">
+            <div class="container banner__container">
+
+
+                <div class="banner__box">
+
+
+
+                    <div class="banner__box__text">
+                            2022
+                    </div>
+                    <div class="banner__box__copy">
+                        @copyright Artem Petrenko
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+</body>
+</html>
